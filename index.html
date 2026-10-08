@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bolos d' Maitê — receitas feitas para adoçar seus momentos</title>
+  <meta name="description" content="Caderno digital de receitas de bolos e doces. Funciona offline e guarda tudo só no seu aparelho.">
+  <meta name="theme-color" content="#f6c9d4">
+
+  <!-- Privacidade: o navegador só pode falar com a própria origem do app.
+       Nenhuma fonte, script, imagem ou requisição externa é permitida. -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'self'; form-action 'none'">
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Bolos d' Maitê">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#app">Ir para o conteúdo</a>
+
+  <div class="shell">
+    <nav class="nav" id="nav" aria-label="Navegação principal"></nav>
+
+    <div class="main-col">
+      <header class="topbar" id="topbar"></header>
+      <main id="app" tabindex="-1" aria-live="polite"></main>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="modal-root"></div>
+
+  <noscript>
+    <p style="padding:2rem;font-family:sans-serif">O Bolos d' Maitê precisa de JavaScript ativado para funcionar.</p>
+  </noscript>
+
+  <script src="app.js"></script>
+</body>
+</html>

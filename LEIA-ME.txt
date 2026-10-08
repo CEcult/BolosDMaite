@@ -1,0 +1,13 @@
+Bolos d' Maitê — caderno digital de receitas (100% local)
+
+COMO USAR
+1. Descompacte a pasta e abra index.html no navegador (funciona direto, sem servidor).
+2. Para INSTALAR na tela inicial e usar offline como app (PWA), o navegador exige
+   que os arquivos sejam servidos por http://localhost ou por um endereço https
+   (ex.: GitHub Pages, Netlify, ou um servidor local: `python3 -m http.server`).
+   Depois de abrir uma vez assim, o app passa a funcionar sem internet.
+
+PRIVACIDADE
+- Receitas: IndexedDB. Favoritos, lista de compras e tema: localStorage.
+- Nenhuma requisição externa, conta, analytics ou notificação.
+- Backup: Perfil > Exportar backup (arquivo .json) / Importar backup.
